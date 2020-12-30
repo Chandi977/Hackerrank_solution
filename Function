@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+int sum()
+{
+    int i,a[10];
+    for(i=0; i<=3; i++)
+    {
+        cin>>a[i];
+    }
+    for(i=0; i<=3; i++)
+    {
+        if(a[0]<a[i])
+            a[0]=a[i];
+    }
+    cout<<a[0];
+}
+int main()
+{
+    sum();
+    return 0;
+}
